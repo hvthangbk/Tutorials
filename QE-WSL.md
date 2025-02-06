@@ -21,11 +21,11 @@ sudo apt install libopenmpi-dev libscalapack-openmpi-dev libelpa-dev
 
 ## QE Download & Compile
 
-- Download  last version of QE from gitlab repository
+- Download  lastest version of QE from gitlab repository
 
 ```bash
-mkdir SOURCES
-cd SOURCES
+mkdir QE
+cd QE
 wget https://gitlab.com/QEF/q-e/-/archive/qe-7.4/q-e-qe-7.4.tar.gz
 tar -xvf q-e-qe-7.4.tar.gz
 ```
@@ -48,7 +48,7 @@ tar -xvf q-e-qe-7.4.tar.gz
   add this lines to your ~/.bashrc or ~/.zshrc 
 
   ```bash
-  export PATH=$PATH:/home/wsluser/SOURCE/q-e-qe-7.4/bin
+  export PATH=$PATH:/home/user/QE/q-e-qe-7.4/bin
   ```
 
   
@@ -68,5 +68,5 @@ tar -xvf q-e-qe-7.4.tar.gz
   ```
   unzip master.zip
   cd QE-Examples-master/Example-01/
-  mpirun -np 2 pw.x < espresso.in | tee espresso.out
+  mpirun -np 2 pw.x < espresso.in > espresso.out
   ```
