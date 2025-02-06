@@ -21,7 +21,7 @@ sudo apt install libopenmpi-dev libscalapack-openmpi-dev libelpa-dev
 
 ## QE Download & Compile
 
-- Download  lastest version of QE from gitlab repository
+- Download  latest version of QE from gitlab repository
 
 ```bash
 mkdir QE
